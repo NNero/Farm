@@ -17,7 +17,7 @@
 		
 		override public function get Type():String
 		{
-			return "turnip";
+			return "TURNIP";
 		}
 		
 		override public function set Stage(value:int)

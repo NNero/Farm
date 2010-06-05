@@ -1,4 +1,4 @@
-package main
+﻿package main
 {
 	import flash.display.Bitmap;
 	import flash.display.MovieClip;
@@ -26,14 +26,14 @@ package main
 		
 		public function ImageUrl(stage:int):String
 		{
-			return "images/stages/" + Type + "_" + stage + ".png";
+			return "images/stages/" + Type + "_" + stage + ".PNG";
 		}
 		
 		public static function CreatePlant(id:int, type:String, stage:int):Plant
 		{
 			switch (type)
 			{
-				case "turnip":
+				case "TURNIP":
 					return new Turnip(id, stage);
 				default:
 					return null;

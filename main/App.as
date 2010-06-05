@@ -38,7 +38,7 @@
 			if (Step <= 7)
 			{
 				var loader:URLLoader = new URLLoader();
-				var request:URLRequest = new URLRequest("xml/sample" + Step + ".xml");
+				var request:URLRequest = new URLRequest("xml/SAMPLE" + Step + ".XML");
 				loader.load(request);
 				loader.addEventListener(Event.COMPLETE, NextStateComplete);
 				Step++;

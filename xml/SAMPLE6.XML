@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" ?>
 <rancho owner_id="1" >
 	<field klass="src.farm.Field" id="2" x="4"  y="3" >
-		<crop klass="turnip" id="7" stage="3" created_at='2009/11/28 21:21:21' />
+		<crop klass="TURNIP" id="7" stage="3" created_at='2009/11/28 21:21:21' />
 	</field>
 	<field klass="src.farm.Field" id="3" x="0"  y="3" >
-		<crop klass="turnip" id="5" stage="4" created_at='2009/11/28 21:21:21' />
+		<crop klass="TURNIP" id="5" stage="4" created_at='2009/11/28 21:21:21' />
 	</field>
 	<field klass="src.farm.Field" id="8" x="2"  y="0" >
-		<crop klass="turnip" id="8" stage="1" created_at='2009/11/28 21:21:21' />
+		<crop klass="TURNIP" id="8" stage="1" created_at='2009/11/28 21:21:21' />
 	</field>
 </rancho>
