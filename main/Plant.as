@@ -26,7 +26,7 @@ package main
 		
 		public function ImageUrl(stage:int):String
 		{
-			return "images\\stages\\" + Type + "_" + stage + ".png";
+			return "images/stages/" + Type + "_" + stage + ".png";
 		}
 		
 		public static function CreatePlant(id:int, type:String, stage:int):Plant

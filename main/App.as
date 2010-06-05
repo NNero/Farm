@@ -3,8 +3,6 @@
 	import flash.display.MovieClip;
 	import flash.events.Event;
 	import flash.events.MouseEvent;
-	import flash.net.URLLoader;
-	import flash.net.URLRequest;
 	
 	public class App extends MovieClip
 	{
@@ -28,21 +26,13 @@
 			btnNext.addEventListener(MouseEvent.CLICK, LoadNextState);
 			addChild(btnNext);
 			
+			FarmService.Reset();
 			LoadNextState(null);
 		}
 		
-		private var Step:int = 1;
-		
 		function LoadNextState(event:MouseEvent)
 		{
-			if (Step <= 7)
-			{
-				var loader:URLLoader = new URLLoader();
-				var request:URLRequest = new URLRequest("xml\\sample" + Step + ".xml");
-				loader.load(request);
-				loader.addEventListener(Event.COMPLETE, NextStateComplete);
-				Step++;
-			}
+			FarmService.Next(NextStateComplete);
 		}
 		
 		function NextStateComplete(event:Event)
